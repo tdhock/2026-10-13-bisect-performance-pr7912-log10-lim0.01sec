@@ -1,0 +1,1964 @@
+{
+ "geoms": {
+ "geom1_rect_bisects": {
+ "geom": "rect",
+"classed": "geom1_rect_bisects",
+"aes": {
+"xmin": "rank_old",
+"xmax": "rank_new",
+"key": "1",
+"ymin": "-Inf",
+"ymax": "Inf",
+"showSelected1": "Bisect"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.3,
+"colour": "transparent",
+"fill": "#BEBEBE",
+"showSelected": "Bisect",
+"help_showSelected": "Bisect" 
+},
+"types": {
+"ymin": "numeric",
+"ymax": "numeric",
+"xmin": "numeric",
+"xmax": "numeric",
+"key": "numeric",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom2_tallrect_bisects": {
+ "geom": "tallrect",
+"classed": "geom2_tallrect_bisects",
+"aes": {
+"xmin": "rank - 0.5",
+"xmax": "rank + 0.5",
+"key": "rank",
+"showSelected1": "Bisect"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#BEBEBE",
+"fill": "#BEBEBE",
+"showSelected": "Bisect",
+"help_showSelected": "Bisect" 
+},
+"types": {
+"xmin": "numeric",
+"xmax": "numeric",
+"key": "integer",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom3_vline_bisects": {
+ "geom": "vline",
+"classed": "geom3_vline_bisects",
+"aes": {
+"xintercept": "rank_change",
+"key": "1",
+"showSelected1": "Bisect",
+"showSelected2": "Status"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#7F7F7F",
+"showSelected": [ "Bisect", "Status" ],
+"help_showSelected": [ "Bisect", "Status" ] 
+},
+"types": {
+"xintercept": "numeric",
+"key": "numeric",
+"showSelected1": "character",
+"showSelected2": "factor",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom4_segment_bisects": {
+ "geom": "segment",
+"classed": "geom4_segment_bisects",
+"aes": {
+"x": "rank",
+"y": "log10_N_hi",
+"xend": "rank",
+"yend": "log10_N_lo",
+"key": "age",
+"colour": "age",
+"showSelected1": "Bisect",
+"showSelected2": "age"
+},
+"params": {
+ "lineend": "butt",
+"na.rm": false,
+"na.rm": false,
+"showSelected": [ "Bisect", "age" ],
+"help_showSelected": [ "Bisect", "age" ] 
+},
+"types": {
+"colour": "rgb",
+"y": "numeric",
+"yend": "numeric",
+"x": "numeric",
+"xend": "numeric",
+"key": "factor",
+"showSelected1": "character",
+"showSelected2": "factor",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom5_segment_bisects": {
+ "geom": "segment",
+"classed": "geom5_segment_bisects",
+"aes": {
+"x": "ifelse(age == \"old\", rank_old, rank_min)",
+"y": "med_value",
+"xend": "ifelse(age == \"old\", rank_max, rank_new)",
+"yend": "med_value",
+"key": "age",
+"colour": "age",
+"showSelected1": "age",
+"showSelected2": "Bisect"
+},
+"params": {
+ "lineend": "butt",
+"na.rm": false,
+"na.rm": false,
+"showSelected": [ "age", "Bisect" ],
+"help_showSelected": [ "age", "Bisect" ] 
+},
+"types": {
+"colour": "rgb",
+"y": "numeric",
+"yend": "numeric",
+"x": "numeric",
+"xend": "numeric",
+"key": "factor",
+"showSelected1": "factor",
+"showSelected2": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom6_segment_bisects": {
+ "geom": "segment",
+"classed": "geom6_segment_bisects",
+"aes": {
+"x": "rank_old",
+"y": "y",
+"xend": "rank_new",
+"yend": "y",
+"clickSelects": "Bisect"
+},
+"params": {
+ "lineend": "butt",
+"na.rm": false,
+"na.rm": false,
+"size":        4,
+"clickSelects": "Bisect",
+"help_clickSelects": "Bisect" 
+},
+"types": {
+"y": "numeric",
+"yend": "numeric",
+"x": "numeric",
+"xend": "numeric",
+"clickSelects": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "PANEL" 
+],
+"subset_order": [
+ "PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom7_text_bisects": {
+ "geom": "text",
+"classed": "geom7_text_bisects",
+"aes": {
+"x": "(min(rank_old) + max(rank_new))/2",
+"y": "0",
+"key": "1",
+"label": "Bisect",
+"showSelected1": "Bisect"
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"showSelected": "Bisect",
+"help_showSelected": "Bisect" 
+},
+"types": {
+"y": "numeric",
+"x": "numeric",
+"key": "numeric",
+"label": "character",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom8_point_bisects": {
+ "geom": "point",
+"classed": "geom8_point_bisects",
+"aes": {
+"x": "rank",
+"y": "y",
+"colour": "age",
+"clickSelects": "Bisect"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        4,
+"clickSelects": [ "age", "Bisect" ],
+"help_clickSelects": [ "age", "Bisect" ] 
+},
+"types": {
+"colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"clickSelects": "character",
+"PANEL": "factor",
+"group": "character",
+"fill": "rgb"
+},
+"chunk_order": [],
+"nest_order": [
+ "PANEL" 
+],
+"subset_order": [
+ "PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom9_segment_bisects": {
+ "geom": "segment",
+"classed": "geom9_segment_bisects",
+"aes": {
+"x": "rank_min",
+"y": "y",
+"xend": "rank_max",
+"yend": "y",
+"clickSelects": "Bisect"
+},
+"params": {
+ "lineend": "butt",
+"na.rm": false,
+"na.rm": false,
+"size":        7,
+"clickSelects": "Bisect",
+"help_clickSelects": "Bisect" 
+},
+"types": {
+"y": "numeric",
+"yend": "numeric",
+"x": "numeric",
+"xend": "numeric",
+"clickSelects": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "PANEL" 
+],
+"subset_order": [
+ "PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom10_point_bisects": {
+ "geom": "point",
+"classed": "geom10_point_bisects",
+"aes": {
+"x": "rank_change",
+"y": "y",
+"fill": "Status",
+"clickSelects": "Bisect",
+"showSelected1": "Status"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        5,
+"clickSelects": "Bisect",
+"showSelected": "Status",
+"help_clickSelects": "Bisect",
+"help_showSelected": "Status" 
+},
+"types": {
+"fill": "rgb",
+"y": "numeric",
+"x": "numeric",
+"clickSelects": "character",
+"showSelected1": "factor",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom11_line_bisects": {
+ "geom": "line",
+"classed": "geom11_line_bisects",
+"aes": {
+"x": "rank",
+"y": "value_median",
+"colour": "age",
+"showSelected1": "age"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        1,
+"showSelected": "age",
+"help_showSelected": "age" 
+},
+"types": {
+"colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"showSelected1": "factor",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom12_point_bisects": {
+ "geom": "point",
+"classed": "geom12_point_bisects",
+"aes": {
+"x": "rank",
+"y": "value",
+"key": "paste(rank, age)",
+"fill": "Status",
+"colour": "age",
+"showSelected1": "Status",
+"showSelected2": "age",
+"showSelected3": "Bisect"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        3,
+"showSelected": [ "Status", "age", "Bisect" ],
+"help_showSelected": [ "Status", "age", "Bisect" ] 
+},
+"types": {
+"colour": "rgb",
+"fill": "rgb",
+"y": "numeric",
+"x": "numeric",
+"key": "character",
+"showSelected1": "factor",
+"showSelected2": "factor",
+"showSelected3": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2",
+"showSelected3",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2",
+"showSelected3",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom13_tallrect_bisects": {
+ "geom": "tallrect",
+"classed": "geom13_tallrect_bisects",
+"aes": {
+"xmin": "rank - 0.5",
+"xmax": "rank + 0.5",
+"key": "rank",
+"clickSelects": "Commit",
+"showSelected1": "Bisect"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":        1,
+"colour": "#000000",
+"fill": "transparent",
+"clickSelects": "Commit",
+"showSelected": "Bisect",
+"alpha_off":        0,
+"colour_off": "transparent",
+"help_clickSelects": "Commit",
+"help_showSelected": "Bisect" 
+},
+"types": {
+"xmin": "numeric",
+"xmax": "numeric",
+"key": "integer",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom14_hline_details": {
+ "geom": "hline",
+"classed": "geom14_hline_details",
+"aes": {
+"yintercept": "seconds"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#BEBEBE" 
+},
+"types": {
+"yintercept": "numeric",
+"PANEL": "integer",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom15_text_details": {
+ "geom": "text",
+"classed": "geom15_text_details",
+"aes": {
+"x": "0",
+"y": "seconds * 1.1",
+"label": "sprintf(\"time limit = %s seconds\", paste(seconds))"
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"colour": "#7F7F7F",
+"anchor": "start" 
+},
+"types": {
+"x": "numeric",
+"y": "numeric",
+"label": "character",
+"PANEL": "integer",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [],
+"subset_order": [],
+"chunks": 1,
+"total": 1 
+},
+"geom16_vline_details": {
+ "geom": "vline",
+"classed": "geom16_vline_details",
+"aes": {
+"xintercept": "N",
+"key": "1",
+"showSelected1": "Commit"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#BEBEBE",
+"showSelected": "Commit",
+"help_showSelected": "Commit" 
+},
+"types": {
+"xintercept": "numeric",
+"key": "numeric",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom17_text_details": {
+ "geom": "text",
+"classed": "geom17_text_details",
+"aes": {
+"x": "N",
+"y": "0",
+"label": "sprintf(\"largest common N=%s\", paste(N))",
+"key": "1",
+"showSelected1": "Commit"
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"colour": "#7F7F7F",
+"showSelected": "Commit",
+"help_showSelected": "Commit",
+"anchor": "end" 
+},
+"types": {
+"x": "numeric",
+"y": "numeric",
+"label": "character",
+"key": "numeric",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom18_ribbon_details": {
+ "geom": "ribbon",
+"classed": "geom18_ribbon_details",
+"aes": {
+"x": "N",
+"ymin": "min",
+"ymax": "max",
+"key": "age",
+"fill": "age",
+"group": "age",
+"showSelected1": "age",
+"showSelected2": "Commit"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":      0.2,
+"colour": "transparent",
+"showSelected": [ "age", "Commit" ],
+"help_showSelected": [ "age", "Commit" ] 
+},
+"types": {
+"fill": "rgb",
+"x": "numeric",
+"ymin": "numeric",
+"ymax": "numeric",
+"key": "factor",
+"group": "character",
+"showSelected1": "factor",
+"showSelected2": "character",
+"PANEL": "integer",
+"colour": "rgb"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2",
+"group" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom19_line_details": {
+ "geom": "line",
+"classed": "geom19_line_details",
+"aes": {
+"x": "N",
+"y": "median",
+"key": "age",
+"colour": "age",
+"group": "age",
+"showSelected1": "age",
+"showSelected2": "Commit"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"showSelected": [ "age", "Commit" ],
+"help_showSelected": [ "age", "Commit" ] 
+},
+"types": {
+"colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"key": "factor",
+"group": "character",
+"showSelected1": "factor",
+"showSelected2": "character",
+"PANEL": "integer"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2",
+"group" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom20_point_details": {
+ "geom": "point",
+"classed": "geom20_point_details",
+"aes": {
+"x": "N",
+"y": "unit.value",
+"key": "age",
+"colour": "age",
+"showSelected1": "age",
+"showSelected2": "Commit"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"fill": "#FFFFFF",
+"size":        3,
+"showSelected": [ "age", "Commit" ],
+"help_showSelected": [ "age", "Commit" ] 
+},
+"types": {
+"colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"key": "factor",
+"showSelected1": "factor",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom21_labelaligned_details": {
+ "geom": "label_aligned",
+"classed": "geom21_labelaligned_details",
+"aes": {
+"x": "N",
+"y": "unit.value",
+"label": "age",
+"key": "age",
+"colour": "age",
+"showSelected1": "age",
+"showSelected2": "Commit"
+},
+"params": {
+ "label_r":     0.15,
+"alignment": "horizontal",
+"min_distance":      0.1,
+"background_rect": true,
+"na.rm": false,
+"na.rm": false,
+"vjust":     -0.1,
+"alpha":      0.5,
+"showSelected": [ "age", "Commit" ],
+"help_showSelected": [ "age", "Commit" ] 
+},
+"types": {
+"colour": "rgb",
+"x": "numeric",
+"y": "numeric",
+"label": "factor",
+"key": "factor",
+"showSelected1": "factor",
+"showSelected2": "character",
+"PANEL": "integer",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom22_text_details": {
+ "geom": "text",
+"classed": "geom22_text_details",
+"aes": {
+"x": "0",
+"y": "0",
+"label": "substring(commit, 1, 8)",
+"href": "paste0(\"https://github.com/Rdatatable/data.table/commit/\", commit)",
+"key": "1",
+"showSelected1": "Commit"
+},
+"params": {
+ "parse": false,
+"check_overlap": false,
+"na.rm": false,
+"na.rm": false,
+"vjust":        0,
+"showSelected": "Commit",
+"help_showSelected": "Commit",
+"anchor": "start" 
+},
+"types": {
+"x": "numeric",
+"y": "numeric",
+"label": "linetype",
+"href": "character",
+"key": "numeric",
+"showSelected1": "character",
+"PANEL": "integer",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1" 
+],
+"subset_order": [
+ "showSelected1" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom23_tallrect_zoom": {
+ "geom": "tallrect",
+"classed": "geom23_tallrect_zoom",
+"aes": {
+"xmin": "rank_rel - 0.5",
+"xmax": "rank_rel + 0.5",
+"key": "rank_rel",
+"showSelected1": "Bisect"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"colour": "#BEBEBE",
+"fill": "#BEBEBE",
+"showSelected": "Bisect",
+"help_showSelected": "Bisect" 
+},
+"types": {
+"xmin": "numeric",
+"xmax": "numeric",
+"key": "integer",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom24_line_zoom": {
+ "geom": "line",
+"classed": "geom24_line_zoom",
+"aes": {
+"x": "rank_rel",
+"y": "value_norm",
+"colour": "age",
+"key": "1",
+"showSelected1": "Bisect",
+"showSelected2": "age"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        1,
+"showSelected": [ "Bisect", "age" ],
+"help_showSelected": [ "Bisect", "age" ] 
+},
+"types": {
+"colour": "rgb",
+"y": "numeric",
+"x": "numeric",
+"key": "numeric",
+"showSelected1": "character",
+"showSelected2": "factor",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom25_point_zoom": {
+ "geom": "point",
+"classed": "geom25_point_zoom",
+"aes": {
+"x": "rank_rel",
+"y": "value_norm",
+"key": "paste(rank, age)",
+"fill": "Status",
+"colour": "age",
+"showSelected1": "Bisect",
+"showSelected2": "Status",
+"showSelected3": "age"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"size":        3,
+"showSelected": [ "Bisect", "Status", "age" ],
+"help_showSelected": [ "Bisect", "Status", "age" ] 
+},
+"types": {
+"colour": "rgb",
+"fill": "rgb",
+"y": "numeric",
+"x": "numeric",
+"key": "character",
+"showSelected1": "character",
+"showSelected2": "factor",
+"showSelected3": "factor",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"showSelected2",
+"showSelected3",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"showSelected2",
+"showSelected3",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+},
+"geom26_tallrect_zoom": {
+ "geom": "tallrect",
+"classed": "geom26_tallrect_zoom",
+"aes": {
+"xmin": "rank_rel - 0.5",
+"xmax": "rank_rel + 0.5",
+"key": "rank_rel",
+"clickSelects": "Commit",
+"showSelected1": "Bisect"
+},
+"params": {
+ "na.rm": false,
+"na.rm": false,
+"alpha":        1,
+"colour": "#000000",
+"fill": "transparent",
+"clickSelects": "Commit",
+"showSelected": "Bisect",
+"colour_off": "transparent",
+"help_clickSelects": "Commit",
+"help_showSelected": "Bisect" 
+},
+"types": {
+"xmin": "numeric",
+"xmax": "numeric",
+"key": "integer",
+"clickSelects": "character",
+"showSelected1": "character",
+"PANEL": "factor",
+"group": "character"
+},
+"chunk_order": [],
+"nest_order": [
+ "showSelected1",
+"PANEL" 
+],
+"subset_order": [
+ "showSelected1",
+"PANEL" 
+],
+"chunks": 1,
+"total": 1 
+} 
+},
+"duration": {
+ "Commit":     1000,
+"Bisect":     1000 
+},
+"selectors": {
+ "Status": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "change", "0", "1" ],
+"levels": [ "change", "0", "1" ],
+"update": [
+ "geom3_vline_bisects",
+"geom10_point_bisects",
+"geom12_point_bisects",
+"geom25_point_zoom" 
+] 
+},
+"age": {
+ "type": "multiple",
+"legend": true,
+"is.variable.value": false,
+"showSelected": true,
+"selected": [ "new", "old", "between" ],
+"levels": [ "new", "old", "between" ],
+"update": [
+ "geom4_segment_bisects",
+"geom5_segment_bisects",
+"geom11_line_bisects",
+"geom12_point_bisects",
+"geom18_ribbon_details",
+"geom19_line_details",
+"geom20_point_details",
+"geom21_labelaligned_details",
+"geom24_line_zoom",
+"geom25_point_zoom" 
+] 
+},
+"Bisect": {
+ "is.variable.value": false,
+"type": "single",
+"showSelected": true,
+"clickSelects": true,
+"selected": "Before-Parent4558",
+"levels": [ "Before-Parent4558", "PR4164-Parent4491", "PR4164-Parent5463", "PR4164-Fast", "PR4558-Fast" ],
+"update": [
+ "geom1_rect_bisects",
+"geom2_tallrect_bisects",
+"geom3_vline_bisects",
+"geom4_segment_bisects",
+"geom5_segment_bisects",
+"geom6_segment_bisects",
+"geom7_text_bisects",
+"geom8_point_bisects",
+"geom9_segment_bisects",
+"geom10_point_bisects",
+"geom12_point_bisects",
+"geom13_tallrect_bisects",
+"geom23_tallrect_zoom",
+"geom24_line_zoom",
+"geom25_point_zoom",
+"geom26_tallrect_zoom" 
+],
+"duration":     1000 
+},
+"Commit": {
+ "is.variable.value": false,
+"type": "single",
+"clickSelects": true,
+"showSelected": true,
+"selected": "Before-Parent4558 11ab05ab1b6cf5ca602f8632bc2a72d47e85583a",
+"levels": [ "Before-Parent4558 11ab05ab1b6cf5ca602f8632bc2a72d47e85583a", "Before-Parent4558 38328a3a69f5fead3abac8560a6c9f42f358a3f7", "Before-Parent4558 4aadde8f5a51cd7c8f3889964e7280432ec65bbc", "Before-Parent4558 4bda6dac7ede429434412ede26b71cfada76f33d", "Before-Parent4558 793f8545c363d222de18ac892bc7abb80154e724", "Before-Parent4558 b417000b570133d1d014a4745163142d0c68e195", "PR4164-Fast 0216983c51e03e3f61d5e6f08f4ba0c42cceb22c", "PR4164-Fast 0c7c90cbe0f5d742b9703e3f07dd4c7c52e08523", "PR4164-Fast 0ebe04b8afdb2d159654e5bdeedf381e17b67141", "PR4164-Fast 20b463c9592c07d05ad2e89a25f84f0b998d6154", "PR4164-Fast 82718b612973ff25fda8e6269c817d359985a85e", "PR4164-Fast 851467f49e0c3b1a1d3fb7e9273dac706f0a7453", "PR4164-Fast 906d026befa1b8c63472f1822714d40b91114103", "PR4164-Fast b3acef8f9694cd4fd45f6fbf15f41943d9efced5", "PR4164-Fast b3acf2ad13848150e87c414f3edcc413c71fd977", "PR4164-Fast bbe7563f9e8d9fb172eeade319850db0f5c6fe20", "PR4164-Fast e13f99379f09dd928fd186950828903d97e7a844", "PR4164-Parent4491 1cb18e384728c46eb620edbadf930d677279e304", "PR4164-Parent4491 3a5ed9b4eda89b47c7bbcfe96930947d067d199e", "PR4164-Parent4491 460b919ed97f2b04079c69a606fe76dd2cd07e1f", "PR4164-Parent4491 588e0725320eacc5d8fc296ee9da4967cee198af", "PR4164-Parent4491 6f360be0b2a6cf425f6df751ca9a99ec5d35ed93", "PR4164-Parent4491 862d8ac897489e92d2d2db1ad3bc59498098280f", "PR4164-Parent4491 ba32f3cba38ec270587e395f6e6c26a80be36be6", "PR4164-Parent4491 bde23bcdcbcf0b41d4f7cc097e0fe889c13a431f", "PR4164-Parent5463 0310dc18b200904d2d8c084caecd9ea885afce0c", "PR4164-Parent5463 0f942123fc2221f3166caca8c61ce6a2e7ecf36e", "PR4164-Parent5463 19065fba64f9b48930d8e51573d01976cbfb25a6", "PR4164-Parent5463 1bc1b4095b99ce101b87b38017b6854614934380", "PR4164-Parent5463 3fa8b20435d33b3d4b5c26fd9b0ac14c10b98800", "PR4164-Parent5463 53e15854bb2c4d2faa7184a3c782cce40e9210f2", "PR4164-Parent5463 72bcdea8df042a4c6ddf65ea1394e8788fab4810", "PR4164-Parent5463 85adf09e3463838d547977ae9bc75e3b37f9cbaf", "PR4164-Parent5463 fbbf8c43cadd32c8db4ae8035029c251f37c18d0", "PR4558-Fast 0216983c51e03e3f61d5e6f08f4ba0c42cceb22c", "PR4558-Fast 14d7f8b2f2fa050df6ebb0b059840659348777d1", "PR4558-Fast 20b463c9592c07d05ad2e89a25f84f0b998d6154", "PR4558-Fast 4d30c7f2437dd17debd19d34ed1c28f6bf8e5484", "PR4558-Fast 6a70af68416e8310f2193b4a644a57e6c8253592", "PR4558-Fast 77ba20e4eaf8edb90421207b76d4c483bd77e52f", "PR4558-Fast 8ff68f0c25961c95aa077ca16e06ad49b555ec07", "PR4558-Fast a8ad00fc93f1f5d293ee48b63f39468febef6f75", "PR4558-Fast cabd30bf21694c4e004a9010073836007436beb3", "PR4558-Fast cfa947febfa69eaee828c17d85999639df446294", "PR4558-Fast d3d00192e025cc7c967ed14984169eeb77410ff7" ],
+"update": [
+ "geom13_tallrect_bisects",
+"geom16_vline_details",
+"geom17_text_details",
+"geom18_ribbon_details",
+"geom19_line_details",
+"geom20_point_details",
+"geom21_labelaligned_details",
+"geom22_text_details",
+"geom26_tallrect_zoom" 
+],
+"duration":     1000 
+} 
+},
+"plots": {
+ "bisects": {
+ "panel_margin_lines":     0.27,
+"strips": {
+ "right": [
+ "Bisect",
+"log10_N",
+"log10_seconds" 
+],
+"top": [
+ "",
+"",
+"" 
+],
+"n": {
+ "top":        1,
+"right":        1 
+} 
+},
+"layout": {
+ "PANEL": [ "1", "2", "3" ],
+"ROW": [ 1, 2, 3 ],
+"COL": [ 1, 1, 1 ],
+"panel": [ "Bisect", "log10_N", "log10_seconds" ],
+"SCALE_X": [ 1, 1, 1 ],
+"SCALE_Y": [ 1, 2, 3 ],
+"AXIS_Y": [ true, true, true ],
+"AXIS_X": [ false, false, true ],
+"coord_fixed": [ false, false, false ],
+"width_proportion": [        1,        1,        1 ],
+"height_proportion": [ 0.3333333, 0.3333333, 0.3333333 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+      10,
+      20,
+      30,
+      40 
+],
+[
+        0,
+      10,
+      20,
+      30,
+      40 
+],
+[
+        0,
+      10,
+      20,
+      30,
+      40 
+] 
+],
+"y": [
+ [
+        0,
+       1,
+       2,
+       3,
+       4,
+       5 
+],
+[
+      2.5,
+       3,
+     3.5,
+       4 
+],
+[
+     -2.2,
+      -2,
+    -1.8,
+    -1.6 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+       5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45 
+],
+[
+        0,
+       5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45 
+],
+[
+        0,
+       5,
+      10,
+      15,
+      20,
+      25,
+      30,
+      35,
+      40,
+      45 
+] 
+],
+"y": [
+ [
+        0,
+     0.5,
+       1,
+     1.5,
+       2,
+     2.5,
+       3,
+     3.5,
+       4,
+     4.5,
+       5 
+],
+[
+      2.5,
+    2.75,
+       3,
+    3.25,
+     3.5,
+    3.75,
+       4 
+],
+[
+     -2.3,
+    -2.2,
+    -2.1,
+      -2,
+    -1.9,
+    -1.8,
+    -1.7,
+    -1.6 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        0,
+      10,
+      20,
+      30,
+      40 
+],
+"xlab": [
+ "0",
+"10",
+"20",
+"30",
+"40" 
+],
+"xrange": [     -1.3,     49.3 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+       1,
+       2,
+       3,
+       4,
+       5 
+],
+"ylab": [
+ "0",
+"1",
+"2",
+"3",
+"4",
+"5" 
+],
+"yrange": [    -0.25,     5.25 ],
+"yline": false,
+"yticks": true 
+},
+"axis2": {
+ "x": [
+        0,
+      10,
+      20,
+      30,
+      40 
+],
+"xlab": [
+ "0",
+"10",
+"20",
+"30",
+"40" 
+],
+"xrange": [     -1.3,     49.3 ],
+"xline": false,
+"xticks": true,
+"y": [
+      2.5,
+       3,
+     3.5,
+       4 
+],
+"ylab": [
+ "2.5",
+"3.0",
+"3.5",
+"4.0" 
+],
+"yrange": [ 2.275528, 4.015143 ],
+"yline": false,
+"yticks": true 
+},
+"axis3": {
+ "x": [
+        0,
+      10,
+      20,
+      30,
+      40 
+],
+"xlab": [
+ "0",
+"10",
+"20",
+"30",
+"40" 
+],
+"xrange": [     -1.3,     49.3 ],
+"xline": false,
+"xticks": true,
+"y": [
+     -2.2,
+      -2,
+    -1.8,
+    -1.6 
+],
+"ylab": [
+ "-2.2",
+"-2.0",
+"-1.8",
+"-1.6" 
+],
+"yrange": [ -2.374943, -1.51243 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Commit rank over time",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "0",
+"10",
+"20",
+"30",
+"40" 
+],
+"ylabs": [
+ "0",
+"1",
+"2",
+"3",
+"4",
+"5",
+"2.5",
+"3.0",
+"3.5",
+"4.0",
+"-2.2",
+"-2.0",
+"-1.8",
+"-1.6" 
+],
+"title": "Overview of all commits tested, select bisect",
+"title_size": "14.4pt",
+"options": {
+ "width":      600,
+"height":      700 
+},
+"span": {
+ "rowspan":        2,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom1_rect_bisects",
+"geom2_tallrect_bisects",
+"geom3_vline_bisects",
+"geom4_segment_bisects",
+"geom5_segment_bisects",
+"geom6_segment_bisects",
+"geom7_text_bisects",
+"geom8_point_bisects",
+"geom9_segment_bisects",
+"geom10_point_bisects",
+"geom11_line_bisects",
+"geom12_point_bisects",
+"geom13_tallrect_bisects" 
+] 
+},
+"details": {
+ "panel_margin_lines":     0.27,
+"strips": {
+ "top": [
+ "" 
+],
+"right": [
+ "" 
+],
+"n": {
+ "top":        0,
+"right":        0 
+} 
+},
+"layout": {
+ "PANEL": [ 1 ],
+"ROW": [ 1 ],
+"COL": [ 1 ],
+"SCALE_X": [ 1 ],
+"SCALE_Y": [ 1 ],
+"AXIS_X": [ true ],
+"AXIS_Y": [ true ],
+"coord_fixed": [ false ],
+"width_proportion": [        1 ],
+"height_proportion": [        1 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        1,
+       2,
+       3,
+       4 
+] 
+],
+"y": [
+ [
+ -2.522879,
+      -2,
+-1.522879 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        1,
+     1.5,
+       2,
+     2.5,
+       3,
+     3.5,
+       4 
+] 
+],
+"y": [
+ [
+ -2.522879,
+-2.261439,
+      -2,
+-1.761439,
+-1.522879,
+-1.261439 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        1,
+       2,
+       3,
+       4 
+],
+"xlab": [
+ "10",
+"100",
+"1000",
+"10000" 
+],
+"xrange": [     0.85,     4.15 ],
+"xline": false,
+"xticks": true,
+"y": [
+ -2.522879,
+      -2,
+-1.522879 
+],
+"ylab": [
+ "0.003",
+"0.010",
+"0.030" 
+],
+"yrange": [ -2.661597, -1.101822 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "N = number of columns in CSV file",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "Seconds to fread(file.csv)",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "10",
+"100",
+"1000",
+"10000" 
+],
+"ylabs": [
+ "0.003",
+"0.010",
+"0.030" 
+],
+"title": "Asymptotic timing results for selected commit",
+"title_size": "14.4pt",
+"options": {
+ "width":      600,
+"height":      300 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": true 
+},
+"geoms": [
+ "geom14_hline_details",
+"geom15_text_details",
+"geom16_vline_details",
+"geom17_text_details",
+"geom18_ribbon_details",
+"geom19_line_details",
+"geom20_point_details",
+"geom21_labelaligned_details",
+"geom22_text_details" 
+] 
+},
+"zoom": {
+ "panel_margin_lines":     0.27,
+"legend": {
+ "Status": {
+ "guide": "legend",
+"geoms": "point",
+"title": "Status",
+"class": "Status",
+"selector": "Status",
+"is_discrete": true,
+"legend_type": "fill",
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "pointfill": "#000000",
+"pointshape":       19,
+"pointcolour": "#000000",
+"pointsize":        3,
+"pointstroke":      0.5,
+"label": "0" 
+},
+{
+ "pointfill": "#7F7F7F",
+"pointshape":       19,
+"pointcolour": "#000000",
+"pointsize":        3,
+"pointstroke":      0.5,
+"label": "change" 
+},
+{
+ "pointfill": "#FFFFFF",
+"pointshape":       19,
+"pointcolour": "#000000",
+"pointsize":        3,
+"pointstroke":      0.5,
+"label": "1" 
+} 
+] 
+},
+"age": {
+ "guide": "legend",
+"geoms": [ "path", "point" ],
+"title": "age",
+"class": "age",
+"selector": "age",
+"is_discrete": true,
+"legend_type": "colour",
+"text_size": "9.6pt",
+"title_size": "12pt",
+"entries": [
+ {
+ "pathcolour": "#EE82EE",
+"pathsize":        1,
+"pathlinetype":        1,
+"label": "old",
+"pointcolour": "#EE82EE",
+"pointshape":       19,
+"pointsize":        3,
+"pointstroke":      0.5,
+"pathfill": "#FFFFFF",
+"pointfill": "#FFFFFF" 
+},
+{
+ "pathcolour": "#0000FF",
+"pathsize":        1,
+"pathlinetype":        1,
+"label": "between",
+"pointcolour": "#0000FF",
+"pointshape":       19,
+"pointsize":        3,
+"pointstroke":      0.5,
+"pathfill": "#FFFFFF",
+"pointfill": "#FFFFFF" 
+},
+{
+ "pathcolour": "#FF0000",
+"pathsize":        1,
+"pathlinetype":        1,
+"label": "new",
+"pointcolour": "#FF0000",
+"pointshape":       19,
+"pointsize":        3,
+"pointstroke":      0.5,
+"pathfill": "#FFFFFF",
+"pointfill": "#FFFFFF" 
+} 
+] 
+} 
+},
+"strips": {
+ "right": [
+ "log10_N",
+"log10_seconds" 
+],
+"top": [
+ "",
+"" 
+],
+"n": {
+ "top":        1,
+"right":        1 
+} 
+},
+"layout": {
+ "PANEL": [ "1", "2" ],
+"ROW": [ 1, 2 ],
+"COL": [ 1, 1 ],
+"variable": [ "log10_N", "log10_seconds" ],
+"SCALE_X": [ 1, 1 ],
+"SCALE_Y": [ 1, 2 ],
+"AXIS_Y": [ true, true ],
+"AXIS_X": [ false, true ],
+"coord_fixed": [ false, false ],
+"width_proportion": [        1,        1 ],
+"height_proportion": [      0.5,      0.5 ] 
+},
+"panel_background": {
+ "fill": "#FFFFFF",
+"colour": "transparent",
+"size":      0.5,
+"linetype":        1 
+},
+"panel_border": {
+ "fill": "transparent",
+"colour": "#7F7F7F",
+"size":      0.5,
+"linetype":        1 
+},
+"grid_major": {
+ "colour": "#E5E5E5",
+"size":      0.2,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+       5,
+      10,
+      15 
+],
+[
+        0,
+       5,
+      10,
+      15 
+] 
+],
+"y": [
+ [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+],
+[
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+] 
+] 
+} 
+},
+"grid_minor": {
+ "colour": "#FAFAFA",
+"size":      0.5,
+"linetype":        1,
+"lineend": "butt",
+"loc": {
+ "x": [
+ [
+        0,
+     2.5,
+       5,
+     7.5,
+      10,
+    12.5,
+      15,
+    17.5 
+],
+[
+        0,
+     2.5,
+       5,
+     7.5,
+      10,
+    12.5,
+      15,
+    17.5 
+] 
+],
+"y": [
+ [
+        0,
+   0.125,
+    0.25,
+   0.375,
+     0.5,
+   0.625,
+    0.75,
+   0.875,
+       1 
+],
+[
+        0,
+   0.125,
+    0.25,
+   0.375,
+     0.5,
+   0.625,
+    0.75,
+   0.875,
+       1 
+] 
+] 
+} 
+},
+"axis1": {
+ "x": [
+        0,
+       5,
+      10,
+      15 
+],
+"xlab": [
+ "0",
+"5",
+"10",
+"15" 
+],
+"xrange": [    -1.45,    19.45 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+],
+"ylab": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"yrange": [    -0.05,     1.05 ],
+"yline": false,
+"yticks": true 
+},
+"axis2": {
+ "x": [
+        0,
+       5,
+      10,
+      15 
+],
+"xlab": [
+ "0",
+"5",
+"10",
+"15" 
+],
+"xrange": [    -1.45,    19.45 ],
+"xline": false,
+"xticks": true,
+"y": [
+        0,
+    0.25,
+     0.5,
+    0.75,
+       1 
+],
+"ylab": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"yrange": [    -0.05,     1.05 ],
+"yline": false,
+"yticks": true 
+},
+"xtitle": "Commit rank relative to bisect",
+"strip_text_xsize": "12pt",
+"xsize": "12pt",
+"xangle":        0,
+"xanchor": "middle",
+"ytitle": "",
+"strip_text_ysize": "12pt",
+"ysize": "12pt",
+"yangle":        0,
+"yanchor": "end",
+"xlabs": [
+ "0",
+"5",
+"10",
+"15" 
+],
+"ylabs": [
+ "0.00",
+"0.25",
+"0.50",
+"0.75",
+"1.00" 
+],
+"title": "Zoom to bisect, relative values",
+"title_size": "14.4pt",
+"options": {
+ "width":      550,
+"height":      400 
+},
+"span": {
+ "rowspan": null,
+"colspan": null,
+"last_in_row": null 
+},
+"geoms": [
+ "geom23_tallrect_zoom",
+"geom24_line_zoom",
+"geom25_point_zoom",
+"geom26_tallrect_zoom" 
+] 
+} 
+},
+"source": "https://github.com/tdhock/data.table-pr7912-bisect-viz/blob/main/viz.R",
+"title": "data.table git bisect performance analysis for PR7912, 0.01 sec time limit, N on log10 scale" 
+}
